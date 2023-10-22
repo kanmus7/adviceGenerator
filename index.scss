@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+//colors
+
+$LightCyan: hsl(193, 38%, 86%);
+$NeonGreen: hsl(150, 100%, 66%);
+$Grayish: hsl(217, 19%, 38%);
+$DarkGrayishBlue: hsl(217, 19%, 24%);
+$DarkBlue: hsl(218, 23%, 16%);
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $DarkBlue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 2% 4%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $DarkGrayishBlue;
+  max-width: 680px;
+  height: 300px;
+
+  h1 {
+    color: $NeonGreen;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 20px 0;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      padding: 10px;
+      color: $LightCyan;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .divider {
+      padding: 10px;
+      margin: 25px 0;
+    }
+  }
+}
+
+button {
+  padding: 18px;
+  background-color: $NeonGreen;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: -35px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: $NeonGreen;
+  box-shadow: 0 0 20px 10px $NeonGreen;
+}
