@@ -27,8 +27,8 @@ main {
   justify-content: center;
   align-items: center;
   background: hsl(217, 19%, 24%);
-  width: 580px;
-  height: 350px;
+  width: 570px;
+  height: 345px;
 }
 main h1 {
   color: hsl(150, 100%, 66%);
